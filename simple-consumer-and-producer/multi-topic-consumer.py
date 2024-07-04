@@ -1,7 +1,7 @@
 from kafka import KafkaConsumer as kc
 
 consumidor = kc(
-    "mensagem-00",
+    "mensagem-00", "mensagem-01",
     bootstrap_servers="localhost:29092",
     consumer_timeout_ms=3000,
     group_id="consumidores",
